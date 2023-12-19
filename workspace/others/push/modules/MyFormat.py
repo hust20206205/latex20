@@ -27,6 +27,8 @@ replacements = {
 
     'ddd': 'thiết kế hướng miền',
     'DDD': 'thiết kế hướng miền',
+
+    "newpage":" newpage"
 }
 
 
