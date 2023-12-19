@@ -1,23 +1,9 @@
-Trong kiến trúc     vi dịch vụ, các dịch vụ phải tương tác quan hệ với nhau, dẫn đến sự xuất hiện của mối quan hệ phụ thuộc. Những mối quan hệ này cần được quản lý chặt chẽ để   hoạt động độc lập,   nhất quán và   linh hoạt.  Do đó, cần  phải   ghi lại các  mối quan hệ   thông qua việc sử dụng bản đồ bối cảnh.   \emph{Bản đồ bối cảnh (Context Maps)} là sự thể hiện trực quan của hệ thống, thể hiện các thành phần, liên kết và mối quan hệ.
-
+Trong kiến trúc vi dịch vụ, các dịch vụ phải tương tác quan hệ với nhau, dẫn đến sự xuất hiện của mối quan hệ phụ thuộc. Những mối quan hệ này cần được quản lý chặt chẽ để hoạt động độc lập, nhất quán và linh hoạt. Do đó, cần phải ghi lại các mối quan hệ thông qua việc sử dụng bản đồ bối cảnh. \emph{Bản đồ bối cảnh (Context Maps)} là sự thể hiện trực quan của hệ thống, thể hiện các thành phần, liên kết và mối quan hệ.
 
 \end{document}
 
 % %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
 
-% %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
-
-% %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
-
-% %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
-
-% %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
-
-% %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
-
-% %!<! - - Context Mapping : https:// thiết kế hướng miền - practitioners.com/context - map - - >
-
-Trang chủTrang chủBảng chú giảiBản đồ bối cảnh
 
 Bản đồ bối cảnh
 
@@ -25,56 +11,35 @@ Trong Thiết kế hướng miền, Bản đồ bối cảnh là một công c�
 
 Bối cảnh giới hạn rất quan trọng trong thiết kế hướng miền vì chúng giúp xác định và quản lý độ phức tạp của các miền lớn bằng cách chia chúng thành các phần nhỏ hơn, dễ quản lý hơn. Bằng cách hiểu mối quan hệ giữa các bối cảnh khác nhau, các nhóm phát triển có thể cộng tác hiệu quả hơn và đảm bảo rằng mỗi bối cảnh được thiết kế theo cách phù hợp với mục tiêu chung của miền. Bản đồ bối cảnh cũng giúp làm nổi bật các khu vực có xung đột hoặc chồng chéo tiềm ẩn giữa các bối cảnh, có thể được giải quyết sớm để tránh các vấn đề về sau.
 
-Bản đồ ngữ cảnh thường bao gồm các thành phần sau:
-
-Ngữ cảnh : Một miền hoặc miền phụ cụ thể có ngữ cảnh giới hạn với các ranh giới rõ ràng và ngôn ngữ chung được xác định rõ ràng.
-
-Bối cảnh giới hạn : Một ranh giới xác định một miền hoặc miền phụ cụ thể trong đó các thuật ngữ và khái niệm có ý nghĩa cụ thể.
-
-Mối quan hệ : Các mối quan hệ giữa các bối cảnh giới hạn. Ở mức độ rộng hơn, các mối quan hệ có hai loại: đối xứng hoặc bất đối xứng. Trong một mối quan hệ đối xứng, cả hai bên đều có tiếng nói ít nhiều bình đẳng trong việc mối quan hệ phát triển như thế nào. Trong mối quan hệ bất đối xứng, một bên đóng vai trò là trung tâm quyền lực rõ ràng
-
-Nhóm : Các nhóm chịu trách nhiệm phát triển và duy trì bối cảnh hoặc miền phụ giới hạn.
-
-Mục tiêu chiến lược : Các mục tiêu chiến lược mà mỗi bối cảnh giới hạn hướng tới đạt được.
-
+Bản đồ ngữ cảnh thường bao gồm các thành phần sau: 
 Bản đồ bối cảnh cung cấp chế độ xem cấp cao về miền và cách các bối cảnh giới hạn khác nhau có liên quan với nhau, giúp các bên liên quan xác định kiến trúc, sự phụ thuộc và rủi ro của hệ thống.
+  
 
-Có một số loại mối quan hệ có thể được mô tả trên bản đồ ngữ cảnh, bao gồm:
 
-Quan hệ đối tác : Mối quan hệ giữa hai bối cảnh giới hạn trong đó họ cộng tác như những đối tác bình đẳng để đạt được mục tiêu chung.
+% %!<! - - Bounded Context: https:// thiết kế hướng miền - practitioners.com/home/glossary/bounded - context - - >
 
-Hạt nhân được chia sẻ : Mối quan hệ trong đó hai bối cảnh giới hạn chia sẻ một phần của mô hình miền hoặc nguồn dữ liệu.
+% bối cảnh giới hạn là ranh giới trong đó một mô hình miền cụ thể tồn tại và hợp lệ. Các ngữ cảnh giới hạn giúp xác định phạm vi của mô hình miền và thiết lập sự hiểu biết rõ ràng về ngôn ngữ được sử dụng trong ngữ cảnh đó.
 
-Khách hàng - Nhà cung cấp : Mối quan hệ giữa hai bối cảnh giới hạn trong đó một bối cảnh cung cấp chức năng hoặc dữ liệu cho bối cảnh khác, ngữ cảnh này sử dụng nó.
+% Các bối cảnh giới hạn phải độc lập trong bối cảnh riêng của chúng, nhưng chúng vẫn có thể cần tương tác với các bối cảnh giới hạn khác để hoàn thành trách nhiệm của chính chúng. Mặc dù chúng độc lập về mặt mô hình nhưng chúng có thể cần giao tiếp với các bối cảnh giới hạn khác để trao đổi thông tin hoặc cộng tác trong một số nhiệm vụ nhất định. Vì vậy các bối cảnh giới hạn có thể có mối quan hệ với nhau. Những mối quan hệ này rất quan trọng vì chúng giúp xác định sự tương tác giữa các phần khác nhau của hệ thống, cũng như thiết lập ranh giới và trách nhiệm giữa các nhóm khác nhau làm việc trên cùng một hệ thống. Có một số loại mối quan hệ bối cảnh giới hạn, bao gồm:
 
-Người theo chủ nghĩa tuân thủ : Một mối quan hệ trong đó một bối cảnh được liên kết với một bối cảnh khác và tuân thủ các quy tắc, tiêu chuẩn hoặc chính sách của bối cảnh đó.
+% Quan hệ đối tác : Đây là mối quan hệ trong đó hai hoặc nhiều bối cảnh giới hạn cộng tác và chia sẻ thông tin. Mối quan hệ hợp tác có thể đạt được thông qua một sự kiện tích hợp hoặc bằng cách gọi một dịch vụ.
 
-Lớp chống đổ vỡ : Mối quan hệ trong đó lớp dịch được sử dụng để tách biệt ngữ cảnh này với ngữ cảnh khác bằng mô hình hoặc công nghệ không tương thích.
+% Hạt nhân được chia sẻ : Trong mối quan hệ này, hai bối cảnh giới hạn chia sẻ một lược đồ mô hình, mã hoặc CSDL chung. Các thành phần được chia sẻ phải ổn định, hoàn thiện và được cả hai nhóm đồng ý. Những thay đổi được thực hiện đối với các thành phần dùng chung cần phải được phối hợp cẩn thận để đảm bảo chúng không phá vỡ chức năng của bối cảnh khác.
 
-Dịch vụ máy chủ mở : Một mối quan hệ trong đó bối cảnh giới hạn cung cấp API công khai có thể được sử dụng bởi các máy khách bên ngoài hoặc các bối cảnh giới hạn khác.
+% Khách hàng - Nhà cung cấp : Đây là mối quan hệ trong đó một bối cảnh giới hạn cung cấp dịch vụ hoặc dữ liệu cho bối cảnh khác. Bối cảnh khách hàng dựa vào bối cảnh nhà cung cấp để có những khả năng hoặc dữ liệu nhất định. Những thay đổi trong bối cảnh nhà cung cấp có thể tác động đến bối cảnh khách hàng, vì vậy điều quan trọng là phải quản lý mối quan hệ này một cách cẩn thận.
 
-Ngôn ngữ được xuất bản : Một mối quan hệ trong đó hai bối cảnh giới hạn đồng ý về một ngôn ngữ hoặc từ vựng chung để giao tiếp với nhau.
+% Người theo chủ nghĩa tuân thủ : Mối quan hệ này tồn tại khi một bối cảnh giới hạn tuân theo cùng một ngôn ngữ và khái niệm phổ biến như một bối cảnh giới hạn khác. Điều này đảm bảo rằng giao tiếp giữa hai bối cảnh là rõ ràng và rõ ràng.
 
-Các cách riêng biệt : Một mối quan hệ trong đó hai bối cảnh giới hạn hoàn toàn độc lập và không có tương tác với nhau.
+% Lớp chống đổ vỡ : Đây là mối quan hệ trong đó ngữ cảnh được giới hạn sử dụng một lớp để dịch giữa ngôn ngữ của chính nó và ngôn ngữ của ngữ cảnh giới hạn khác. Điều này cho phép hai ngữ cảnh giao tiếp với nhau ngay cả khi chúng có từ vựng hoặc mô hình khác nhau.
 
-Ví dụ
+% Dịch vụ máy chủ mở : Mối quan hệ này xảy ra khi một bối cảnh giới hạn hiển thị một API công khai, mở mà các ngữ cảnh khác có thể sử dụng. Điều này cho phép các ngữ cảnh khác tận dụng chức năng của ngữ cảnh máy chủ theo cách được tiêu chuẩn hóa.
 
-Đây là bản đồ bối cảnh đơn giản hóa cho một ngân hàng XYZ hư cấu. Hình ảnh này mô tả các bối cảnh giới hạn khác nhau, mối quan hệ của chúng. Trong trường hợp mối quan hệ không đối xứng, nó cũng chỉ ra bên nào là thượng nguồn và hạ lưu. Nhìn vào hình ảnh này sẽ giúp người xem có cái nhìn rõ ràng về bức tranh tổng thể về bất động sản phần mềm tại Ngân hàng XYZ.
+% Ngôn ngữ được xuất bản : Trong mối quan hệ này, một ngữ cảnh giới hạn sẽ xuất bản từ vựng và mô hình của nó cho các ngữ cảnh khác sử dụng. Điều này hữu ích khi nhiều bối cảnh cần cộng tác nhưng không muốn tích hợp trực tiếp. Ngôn ngữ được xuất bản đảm bảo rằng ý nghĩa của các thuật ngữ nhất quán trong mọi ngữ cảnh.
 
-So sánh với mô hình C4
+% Các cách riêng biệt : Mối quan hệ này đề cập đến tình huống trong đó hai hoặc nhiều bối cảnh giới hạn không còn có mối quan hệ với nhau và các nhóm chịu trách nhiệm về chúng chọn làm việc độc lập.
 
-Mô hình C4 cung cấp một cách khác để mô tả kiến trúc giải pháp của chúng ta. Cụ thể, sơ đồ ngữ cảnh hệ thống về bản chất rất giống với sơ đồ ngữ cảnh ở chỗ chúng đều được sử dụng để trực quan hóa kiến trúc của một hệ thống phần mềm. Tuy nhiên, có một số khác biệt chính giữa hai cách tiếp cận.
+% %!<! - - Bounded Context Relationships : https:// thiết kế hướng miền - practitioners.com/bounded - context - relationship - - >
 
-Bản đồ bối cảnh thiết kế hướng miền là một sơ đồ cấp cao hiển thị các bối cảnh giới hạn khác nhau trong một hệ thống. Mỗi ngữ cảnh giới hạn là một miền độc lập có ngôn ngữ, mô hình và dịch vụ riêng. Bản đồ bối cảnh thiết kế hướng miền là một công cụ hữu ích để hiểu kiến trúc tổng thể của một hệ thống và cách các bối cảnh giới hạn khác nhau tương tác với nhau.
+% %!<! - - Bounded Context Relationships : https:// thiết kế hướng miền - practitioners.com/bounded - context - relationship - - >
 
-Sơ đồ ngữ cảnh hệ thống của mô hình C4 là sơ đồ chi tiết hơn hiển thị các vùng chứa và thành phần khác nhau trong hệ thống. Mỗi container là một nhóm các thành phần có chung cơ sở hạ tầng. Sơ đồ ngữ cảnh hệ thống của mô hình C4 là một công cụ hữu ích để hiểu kiến trúc bên trong của hệ thống cũng như cách các vùng chứa và thành phần khác nhau tương tác với nhau.
-
-Dưới đây là bảng tóm tắt những khác biệt chính giữa hai phương pháp:
-
-Bản đồ bối cảnh thiết kế hướng miền 	Sơ đồ ngữ cảnh hệ thống của mô hình C4
-
-Hiển thị các bối cảnh giới hạn khác nhau	Hiển thị các vùng chứa và thành phần khác nhau
-
-Sơ đồ cấp cao	Sơ đồ chi tiết hơn
-
-Hữu ích cho việc hiểu kiến trúc tổng thể	Hữu ích cho việc hiểu kiến trúc nội bộ
+<!--@============================================== -->
