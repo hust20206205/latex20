@@ -804,9 +804,6 @@ A Permission can have zero or more PermissionGroup objects.
 
 Please let me know if there's anything specific you would like to modify or add to this diagram.
 
-
-
-
 % Để phát triển tốt
 
 % cần tạo một bộ kiểm thử tích hợp tự động
