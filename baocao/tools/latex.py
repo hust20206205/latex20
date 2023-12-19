@@ -22,13 +22,13 @@ print(input)
 output = Convert.VarSnakeCase(input)
 # sao chép file
 ten_file_nguon = r"../contents/_a.tex"
-ten_file_dich = os.path.join("../contents/chapter2", f"{output}"+".tex")
+ten_file_dich = os.path.join("../contents/chapter2/part1", f"{output}"+".tex")
 shutil.copy(ten_file_nguon, ten_file_dich)
 # xóa file
 with open(ten_file_nguon, 'w') as file:
     file.write('')
 # return văn bản
-output = "\n\n\n\n\\input{contents/chapter2/" + output + "}\n\n\n\n\n\n\n\n\n\n\n\n" 
+output = "\n\n\n\n\\input{contents/chapter2/part1/" + output + "}\n\n\n\n\n\n\n\n\n\n\n\n" 
 
 
 
